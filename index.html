@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="recursos/topo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+    <title>Dede Net - Networks</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class='container'>
+      <div class="menu-content">
+        <img src="recursos/topo/logo.png">
+              <div class="navegacao-mobile" onclick="if(document.getElementsByClassName('list-menu')[0].style.display=='block'){document.getElementsByClassName('list-menu')[0].style.display='none'}else{document.getElementsByClassName('list-menu')[0].style.display='block'}">
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+                <span class="linha-menu"></span>
+              </div>
+              <ul class="list-menu nav navbar-nav">
+                <li class="item-menu">
+                  <a href="#home" onclick="document.getElementsByClassName('list-menu')[0].style.display='none'" class="link-menu">A Empresa</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#Planos" onclick="document.getElementsByClassName('list-menu')[0].style.display='none'" class="link-menu">Planos</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#Contatos" onclick="document.getElementsByClassName('list-menu')[0].style.display='none'" class="link-menu">Contatos</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#Cobertura" onclick="document.getElementsByClassName('list-menu')[0].style.display='none'" class="link-menu">Área de cobertura</a>
+                </li>
+                <li class="item-menu">
+                  <a href="#Velocidade" onclick="document.getElementsByClassName('list-menu')[0].style.display='none'" class="link-menu">Teste de Velocidade</a>
+                </li>
+              </ul>
+            </label>
+            <button id="id_boleto" onclick="document.getElementsByClassName('modal')[0].style.display='block'">2ª Via do Boleto</button> 
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" onclick="document.getElementsByClassName('modal')[0].style.display='none'">&times;</span>
+                <p><form action="boleto.php" method="post">CPF/CNPJ: <input type="text" name="cpfcnpj"><input type="submit" value="Buscar"></form></p>
+              </div>          
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <scroll-container>
+          <scroll-page  id="home">
+            <article>
+            <h1>ola, Visitante</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum commodi reiciendis recusandae veritatis reprehenderit nihil, praesentium excepturi provident dicta quae itaque, ad perferendis, expedita quibusdam odio odit. Sit, hic.
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem asperiores necessitatibus rem molestias consequatur non dicta adipisci quod cupiditate magnam neque, nulla quidem quia unde cumque sit harum pariatur cum?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laboriosam beatae. Totam repellendus nostrum assumenda qui aperiam, necessitatibus corporis fugiat cumque nihil, deserunt ex doloremque in cum amet alias! Error.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint similique ab perspiciatis molestias qui facere ad. Magnam officia ipsam porro necessitatibus saepe, iusto pariatur mollitia commodi in accusamus veritatis?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit qui animi laudantium eius ex fugiat fugit nostrum labore inventore, ullam natus quas sed quaerat ipsa ut dolorum corrupti amet earum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo architecto totam tempore error dignissimos itaque eligendi accusamus quos quia soluta est dicta facere illo qui odit, ea minus animi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste optio omnis cum nobis architecto vel debitis ullam impedit, velit fugiat minima assumenda nihil nisi deleniti placeat reprehenderit deserunt rerum.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus cumque ipsum quo vel fugit libero soluta necessitatibus quis doloribus quia asperiores obcaecati nobis, iusto, harum error odio est nisi cupiditate.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae vel, illum mollitia voluptates debitis deserunt non dolore. Dignissimos, ducimus quia. Quasi atque laborum dicta optio nulla? Explicabo veritatis eveniet natus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque nisi, ullam fugit voluptate autem reprehenderit minus ab totam necessitatibus animi quaerat earum nulla voluptatum quo voluptatibus maiores aliquam natus?
+            </p>
+        </article>
+      </scroll-page>
+    <scroll-page id="Planos">
+        <article>
+        <h1>Planos</h1>
+        <div class="cards">
+          <div class="card">
+            <h6>400 MEGAS</h6>
+            <p>de:<s>R$ 100,00</s><br>por:
+              R$ <spam class="preco">130,</spam>00*</p>
+              <a href="http://wa.me/+5598981200476?text=Oi,%20desejo%20assinar%20o%20plano%20de%20*400MEGAS*" target="_blank">Assine Já</a>
+            </div>
+            <div class="card">
+              <h6>500 MEGAS</h6>
+              <p>de:<s>R$ 120,00</s><br>por:
+                R$ <spam class="preco">150,</spam>00*</p>
+                <a href="http://wa.me/+5598981200476?text=Oi,%20desejo%20assinar%20o%20plano%20de%20*500MEGAS*" target="_blank">Assine Já</a>
+              </div>
+              <div class="card">
+                <h6>Empresarial</h6>
+                <p>Verificar viabilidade e Valores a ser negociado</p><br>
+                  <a href="http://wa.me/+5598981200476?text=Oi,%20desejo%20assinar%20o%20plano%20*Empresarial*" target="_blank">Assine Já</a>
+                </div>
+            </div>
+              </article>
+          </scroll-page>
+            <scroll-page id="Contatos">
+      <article>
+      <h1>Contatos</h1>
+      <div class="id_contato">
+        <h3>Como podemos ajudar!?</h3>
+        <form action="contato.php" method="Post">
+          Nome:<br><input type="text" name="nome"><br>
+          Email:<br><input type="text" name="email"><br>
+          Telefone(Whatsapp):<br><input type="text" name="numero"><br>
+          Mensagem:<br><textarea name="mensagem"></textarea><br>
+          <input  type="submit" value="Enviar">
+        </form>
+      </div>
+    </article>
+</scroll-page>
+    <scroll-page id="Cobertura">
+      <article>
+      <h1>Área de cobertura</h1>
+      <h4>Paço do Lumiar</h4>
+      <div class="tabs">
+
+          <div class="tab">
+            <input type="radio" checked id="tab-1" name="tab-group-2">
+            <label for="tab-1">Cafeteira</label>
+            <div class="conteudo">
+              <iframe width="100%" height="500px" src="https://maps.google.com/maps?q=Cafeteira%20-%20Paco%20do%20Lumiar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+          
+          <div class="tab">
+            <input type="radio" id="tab-2" name="tab-group-2">
+            <label for="tab-2">Parana</label>
+            <div class="conteudo">
+              <iframe width="100%" height="500px" src="https://maps.google.com/maps?q=Parana%20-%20Paco%20do%20Lumiar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="tab-3" name="tab-group-2">
+            <label for="tab-3">Novo Horizonte</label>
+            <div class="conteudo">
+              <iframe width="100%" height="500px" src="https://maps.google.com/maps?q=Novo%20Horizonte%20-%20Paco%20do%20Lumiar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="tab-4" name="tab-group-2">
+            <label for="tab-4">Novo Paço</label>
+            <div class="conteudo">
+              <iframe width="100%" height="500px" src="https://maps.google.com/maps?q=Novo%20Paco%20-%20Paco%20do%20Lumiar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="tab-5" name="tab-group-2">
+            <label for="tab-5">Condomínio Bianca</label>
+            <div class="conteudo">
+              <iframe width="100%" height="500px" src="https://maps.google.com/maps?q=Condominio%20Bianca%20-%20Paco%20do%20Lumiar&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+
+
+        </div>      
+  </article>
+</scroll-page>
+    <scroll-page id="Velocidade">
+      <article>
+        <div id="velocimetro">
+        <iframe frameborder='0' height='700px' scrolling='no' src='https://www.testeavelocidade.net/speedtest-claro/' width='100%'>  
+        </iframe>
+      </div>
+  </article>
+</scroll-page>
+</scroll-container>
+    </main>
+    
+    <footer>Desenvolvido por <a href="#">@JohnatanLicar</a></footer>
+    <div class="social">
+      <a href="http://www.facebook.com/profile.php?id=100066353086468" target="_blank"><img id="fb" src="recursos/botoes/facebook.png" alt="facebook"></a>
+      <a href="http://instagram.com/dedenet_" target="_blank"><img id="insta" src="recursos/botoes/instagram.png" alt="instagram"></a>
+      <a href="http://wa.me/+5598981200476" target="_blank"><img id="wp" src="recursos/botoes/whatsapp.png" alt="whatsapp"></a>
+    </div>
+</body>
+</html>
